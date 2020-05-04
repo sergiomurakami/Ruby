@@ -1,10 +1,9 @@
-class Market < Product
-  def initialize(product_name, product_price)
-    @name = product_name
-    @price = product_price
+class Market
+  def initialize(product)
+    @product = product
   end
 
   def buy
-    puts "You bought #{@name} for $#{@price}."
+    puts "You bought #{@product.name} for $#{@product.price}."
   end
 end
